@@ -1,0 +1,9 @@
+.ipynb_checkpoints/*
+__pycache__/
+Challenge/debug.log
+.DS_Store
+.vscode
+__pycache__
+.ipnyb_checkpoints
+.DS_Store
+*.asv
