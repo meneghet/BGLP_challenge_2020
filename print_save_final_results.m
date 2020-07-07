@@ -40,8 +40,8 @@ for PH = [30 60]
             fname = sprintf('subj%g_PH%g_test_rep%g.csv',patN,PH,repN);
             pred_data = readtable(fullfile('results',results_folder,fname));
             
-            % convert string to numbers [do not use if matlab version >= 2020]
-%             pred_data.prediction = my_str2numeric(pred_data.prediction);
+            % convert string to numbers [comment if matlab version >= 2020]
+            pred_data.prediction = my_str2numeric(pred_data.prediction);
             
             % shift prediction accounting for PH
             pred_data.prediction = shift_data(pred_data.prediction, PH/Ts);
